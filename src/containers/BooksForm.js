@@ -4,7 +4,7 @@ export default function BooksForm() {
   return (
     <form className="book-form">
       <p>Book title:</p>
-      <input type="text" id="title" name="title" placeholder="Title" required="true" className="i-field" />
+      <input type="text" id="title" name="title" placeholder="Title" required className="i-field" />
       <p>Select a category:</p>
       <select name="categories" className="i-field">
         {categoryList}
