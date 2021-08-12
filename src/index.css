@@ -1,7 +1,33 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  max-width: 450px;
+  border: 2px dotted rgb(0, 49, 75);
+  margin-bottom: 15px;
+}
+
+.i-field {
+  border: 1px solid rgb(28, 82, 111);
+  border-radius: 4px;
+  padding: 5px;
+  margin: 15px 0;
+}
+
+table {
+  width: 80%;
+  border: 2px solid rgb(28, 82, 111);
+}
+
+td {
+  padding: 10px 20px;
+  background-color: rgb(255, 196, 0);
 }
