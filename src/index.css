@@ -31,3 +31,11 @@ td {
   padding: 10px 20px;
   background-color: rgb(255, 196, 0);
 }
+
+.btn-cell {
+  width: 200px;
+}
+
+.btn-delete {
+  width: 100%;
+}

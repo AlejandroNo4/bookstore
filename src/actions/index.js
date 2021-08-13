@@ -11,11 +11,13 @@ const createBook = (book) => {
 };
 
 const deleteBook = (book) => {
-  const { id } = book;
+  const { id, title, category } = book;
   return {
     type: 'REMOVE_BOOK',
     payload: {
       id,
+      title,
+      category,
     },
   };
 };
