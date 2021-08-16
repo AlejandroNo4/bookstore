@@ -22,4 +22,15 @@ const deleteBook = (book) => {
   };
 };
 
-export { createBook, deleteBook };
+const changeFilter = (filter) => ({
+  type: 'CHANGE_FILTER',
+  payload: {
+    filter,
+  },
+});
+
+const removeFilter = () => ({ type: 'REMOVE_FILTER' });
+
+export {
+  createBook, deleteBook, changeFilter, removeFilter,
+};
