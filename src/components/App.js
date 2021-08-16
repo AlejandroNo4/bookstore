@@ -4,8 +4,8 @@ import BooksList from '../containers/BooksList';
 export default function App() {
   return (
     <div>
-      <BooksForm />
       <BooksList />
+      <BooksForm />
     </div>
   );
 }

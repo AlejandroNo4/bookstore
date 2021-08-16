@@ -11,7 +11,15 @@ export default function BooksForm() {
   };
   const [form, updateInput] = useState(initialState);
 
-  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const categories = [
+    'Action',
+    'Biography',
+    'History',
+    'Horror',
+    'Kids',
+    'Learning',
+    'Sci-Fi',
+  ];
   const categoryList = categories.map((c) => <option key={c}>{c}</option>);
 
   const handleChange = (e) => {
@@ -22,16 +30,35 @@ export default function BooksForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(createBook({ id: random(), title: form.title, category: form.categoryName }));
+    dispatch(
+      createBook({
+        id: random(),
+        title: form.title,
+        category: form.categoryName,
+      }),
+    );
     updateInput({ ...initialState });
   };
 
   return (
     <form className="book-form" onSubmit={handleSubmit}>
       <p>Book title:</p>
-      <input type="text" id="title" name="title" required className="i-field" value={form.title} onChange={handleChange} />
+      <input
+        type="text"
+        id="title"
+        name="title"
+        required
+        className="i-field"
+        value={form.title}
+        onChange={handleChange}
+      />
       <p>Select a category:</p>
-      <select name="categoryName" className="i-field" value={form.categoryName} onChange={handleChange}>
+      <select
+        name="categoryName"
+        className="i-field"
+        value={form.categoryName}
+        onChange={handleChange}
+      >
         {categoryList}
       </select>
       <button type="submit">Submit</button>

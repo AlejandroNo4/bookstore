@@ -8,7 +8,7 @@ export default function CategoryFilter({ selectHandler }) {
   return (
     <form>
       <p>Filter by category:</p>
-      <select name="categoryName" className="i-field" onChange={(e) => handleChange(e.target.value)}>
+      <select name="categoryName" className="i-field" onChange={(e) => handleChange(e.target.value)} value="Category">
         {categoryList}
       </select>
     </form>
