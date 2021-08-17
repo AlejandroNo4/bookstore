@@ -47,7 +47,7 @@ export default function BooksForm() {
   };
 
   const buttonStyle = () => {
-    const styleName = buttonState === false ? 'btn-enabled' : 'btn-disabled';
+    const styleName = buttonState === false ? 'btn-add btn-enabled' : 'btn-add btn-disabled';
     return styleName;
   };
 
@@ -79,7 +79,7 @@ export default function BooksForm() {
         >
           {categoryList}
         </select>
-        <button type="submit" disabled={buttonState} className={buttonStyle()}>Submit</button>
+        <button type="submit" disabled={buttonState} className={buttonStyle()}>ADD BOOK</button>
       </form>
     </div>
 

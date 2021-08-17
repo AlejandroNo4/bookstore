@@ -35,6 +35,7 @@
 .nav-bar {
   width: 100%;
   background-color: var(--white);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .links-container {
@@ -184,7 +185,8 @@
 .book-form-container {
   border-top: 2px solid var(--border-color);
   max-width: calc(100vw - 200px);
-  margin: 45px auto 45px auto;
+  margin: 45px auto 0 auto;
+  padding-bottom: 45px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -204,7 +206,7 @@
   width: 30%;
   background-color: var(--white);
   border: solid 1px var(--border-color);
-  padding: 0.7rem 1rem;
+  padding: 11.5px 16px;
 }
 
 .i-field::placeholder {
@@ -222,26 +224,26 @@
   border: solid 1px var(--border-color);
   color: #c4c4c4;
   font-family: 'Montserrat', sans-serif;
-  padding: 0.7rem 1rem;
+  padding: 11.5px 16px;
+}
+
+.btn-add {
+  border: none;
+  width: 20%;
+  padding: 11.5px 16px;
+  border-radius: 3px;
+  background-color: var(--azure);
+  font-family: 'Roboto Slab', serif;
 }
 
 .btn-disabled {
-  border: none;
-  width: 20%;
-  padding: 0.7rem 1rem;
-  border-radius: 3px;
-  background-color: var(--azure);
   opacity: 0.8;
   color: var(--white-two);
 }
 
 .btn-enabled {
-  width: 20%;
-  border: none;
-  padding: 0.7rem 1rem;
-  border-radius: 3px;
-  background-color: var(--azure);
   color: var(--white);
+  border: 1px solid var(--azure);
 }
 
 .btn-enabled:hover {
