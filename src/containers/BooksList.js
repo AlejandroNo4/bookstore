@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
+import userIcon from '../assets/user-icon.svg';
 import { deleteBook, changeFilter, removeFilter } from '../actions';
 
 export default function BooksList() {
@@ -24,10 +25,19 @@ export default function BooksList() {
   };
 
   return (
-    <div className="bg-gray">
-      <div>
-        <CategoryFilter category="Action" selectHandler={handleFilterChange} />
-      </div>
+    <div>
+      <nav className="nav-bar">
+        <div className="d-flex links-container">
+          <div className="d-flex nav-links-right">
+            <button className="button-logo" type="button">Bookstore CMS</button>
+            <button type="button" className="nav-link">BOOKS</button>
+            <CategoryFilter category="Action" selectHandler={handleFilterChange} />
+          </div>
+          <button type="button" className="user-btn">
+            <img src={userIcon} alt="user icon" className="user-icon" />
+          </button>
+        </div>
+      </nav>
       {booksToRender.map((book) => (
         <Book
           id={book.id}

@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-size: 100%;
+  font-size: 16px;
   vertical-align: baseline;
   list-style: none;
   --white: #fff;
@@ -12,8 +13,9 @@
   --azure: #0290ff;
 }
 
-.bg-gray {
+.body {
   background-color: var(--white-two);
+  min-height: 100vh;
 }
 
 .d-flex {
@@ -24,46 +26,72 @@
   opacity: 0.5;
 }
 
-.book-form {
-  display: flex;
-  flex-direction: column;
-  padding: 35px;
-  max-width: 450px;
-  border: 2px dotted rgb(0, 49, 75);
-  margin-bottom: 15px;
+.nav-bar {
+  width: 100%;
+  background-color: var(--white);
 }
 
-.i-field {
+.links-container {
+  margin: 0 auto;
+  align-items: center;
+  max-width: calc(100vw - 200px);
+  justify-content: space-between;
+  height: 95px;
+}
+
+.nav-link {
+  letter-spacing: 1.9px;
+  border: none;
+  background: none;
+  margin: 0 1.28rem;
+  color: var(--black-two);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.nav-link:hover{
+  cursor: pointer;
+}
+
+.nav-links-right {
+  align-items: center;
+}
+
+.user-btn {
+  border: 1px solid #e8e8e8;
+  justify-self: first-baseline;
+  padding: 10px 12px;
+  background: none;
+  border-radius: 50%;
+}
+
+.user-icon {
+  max-width: 20px;
+}
+
+.user-btn:hover {
+  cursor: pointer;
+}
+
+.button-logo {
   background: none;
   border: none;
+  font-size: 1.875rem;
+  color: var(--azure);
+  font-weight: bold;
+  margin-right: 1.7rem;
 }
 
-table {
-  width: 80%;
-  border: 2px solid rgb(28, 82, 111);
+.button-logo:hover {
+  cursor: pointer;
 }
-
-td {
-  padding: 10px 20px;
-  background-color: rgb(255, 196, 0);
-}
-
-.btn-cell {
-  width: 200px;
-}
-
-.btn-delete {
-  width: 100%;
-}
-
-
-/* start yay */
 
 .book-panel {
-  width: 75rem;
-  height: 10.625rem;
-  margin: 2.313rem auto;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  margin:  16px auto 0 auto;
+  max-width: calc(100vw - 372px);
+  padding: 32px 147px 26px 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +172,7 @@ td {
 
 .progress-button {
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-  margin-top: 0.75rem;
+  margin-top: 20px;
   background-color: var(--azure);
   border-radius: 3px;
   font-weight: 300;
@@ -166,4 +194,71 @@ td {
   letter-spacing: -0.4px;
   color: var(--black-two);
   font-weight: 300;
+}
+
+.book-form-container {
+  border-top: 2px solid #e8e8e8;
+  max-width: calc(100vw - 200px);
+  margin: 45px auto 45px auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.book-form {
+  justify-content: space-between;
+}
+
+.form-title {
+  font-size: 1.25rem;
+  color: #888;
+  letter-spacing: -0.18px;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+.i-field {
+  width: 30%;
+  background-color: var(--white);
+  border: solid 1px #e8e8e8;
+  padding: 0.7rem 1rem;
+}
+
+.i-field::placeholder {
+  color: #c4c4c4;
+  font-family: Montserrat;
+}
+
+.book-field {
+  width: 45%
+}
+
+.field-with-placeholder {
+  width: 30%;
+  background-color: var(--white);
+  border: solid 1px #e8e8e8;
+  color: #c4c4c4;
+  font-family: Montserrat;
+  padding: 0.7rem 1rem;
+}
+
+.btn-disabled {
+  border: none;
+  width: 20%;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  background-color: var(--azure);
+  opacity: 0.8;
+  color: var(--white-two);
+}
+
+.btn-enabled {
+  width: 20%;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  background-color: var(--azure);
+  color: var(--white);
+}
+
+.btn-enabled:hover {
+  cursor: pointer;
 }

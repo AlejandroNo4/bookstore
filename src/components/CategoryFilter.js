@@ -7,8 +7,8 @@ export default function CategoryFilter({ selectHandler }) {
 
   return (
     <form>
-      <p>Filter by category:</p>
-      <select name="categoryName" className="i-field" onChange={(e) => handleChange(e.target.value)} value="Category">
+      <select name="categoryName" className="nav-link opacity" onChange={(e) => handleChange(e.target.value)}>
+        <option value="" disabled selected hidden>CATEGORIES</option>
         {categoryList}
       </select>
     </form>

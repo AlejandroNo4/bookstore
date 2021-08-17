@@ -38,7 +38,7 @@ export default function Book({
       </div>
       <div className="progress-container">
         <div className="d-flex progress-container-left">
-          <img src={circle} alt="user icon" className="circle" />
+          <img src={circle} alt="progress icon" className="circle" />
           <div>
             <p className="percentage">0%</p>
             <p className="opacity">Completed</p>
