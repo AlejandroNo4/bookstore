@@ -11,10 +11,10 @@ export default function Book({
       <div>
         <p className="category">{category}</p>
         <p className="title">{title}</p>
-        <span className="link">Author Name</span>
+        <span className="link pointer">Author Name</span>
         <ul className="link-list">
           <li>
-            <button type="button" className="link">
+            <button type="button" className="link pointer">
               Commens
             </button>
           </li>
@@ -22,7 +22,7 @@ export default function Book({
           <li>
             <button
               type="button"
-              className="link"
+              className="link pointer"
               onClick={() => handleClick({ id, title, category })}
             >
               Remove
@@ -30,7 +30,7 @@ export default function Book({
           </li>
           <li className="line" />
           <li>
-            <button type="button" className="link">
+            <button type="button" className="link pointer">
               Edit
             </button>
           </li>
@@ -49,7 +49,7 @@ export default function Book({
           <div className="current-chapter">
             <p className="opacity">CURRENT CHAPTER</p>
             <p className="current-chapter">Introduction</p>
-            <button type="button" className="progress-button">UPDATE PROGRESS</button>
+            <button type="button" className="progress-button pointer">UPDATE PROGRESS</button>
           </div>
         </div>
       </div>

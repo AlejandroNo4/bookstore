@@ -29,11 +29,11 @@ export default function BooksList() {
       <nav className="nav-bar">
         <div className="d-flex links-container">
           <div className="d-flex nav-links-right">
-            <button className="button-logo" type="button">Bookstore CMS</button>
-            <button type="button" className="nav-link">BOOKS</button>
+            <button className="button-logo pointer" type="button">Bookstore CMS</button>
+            <button type="button" className="nav-link pointer">BOOKS</button>
             <CategoryFilter category="Action" selectHandler={handleFilterChange} />
           </div>
-          <button type="button" className="user-btn">
+          <button type="button" className="user-btn pointer">
             <img src={userIcon} alt="user icon" className="user-icon" />
           </button>
         </div>
