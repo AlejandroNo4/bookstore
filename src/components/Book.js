@@ -7,18 +7,18 @@ export default function Book({
   const handleClick = (book) => clickHandler(book);
 
   return (
-    <div className="book-panel">
+    <div className="book-panel d-flex align-center justyfy-between border-gray">
       <div>
-        <p className="category">{category}</p>
-        <p className="title">{title}</p>
+        <p className="category bold-font">{category}</p>
+        <p className="title bold-font">{title}</p>
         <span className="link pointer">Author Name</span>
-        <ul className="link-list">
+        <ul className="link-list d-flex align-center">
           <li>
             <button type="button" className="link pointer">
               Commens
             </button>
           </li>
-          <li className="line" />
+          <li className="line border-gray" />
           <li>
             <button
               type="button"
@@ -28,7 +28,7 @@ export default function Book({
               Remove
             </button>
           </li>
-          <li className="line" />
+          <li className="line border-gray" />
           <li>
             <button type="button" className="link pointer">
               Edit
@@ -36,7 +36,7 @@ export default function Book({
           </li>
         </ul>
       </div>
-      <div className="progress-container">
+      <div className="d-flex align-center">
         <div className="d-flex progress-container-left">
           <img src={circle} alt="progress icon" className="circle" />
           <div>
@@ -44,7 +44,7 @@ export default function Book({
             <p className="opacity">Completed</p>
           </div>
         </div>
-        <div className="line-two" />
+        <div className="line-two border-gray" />
         <div className="progress-container-right">
           <div className="current-chapter">
             <p className="opacity">CURRENT CHAPTER</p>

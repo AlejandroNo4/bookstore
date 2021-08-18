@@ -47,25 +47,25 @@ export default function BooksForm() {
   };
 
   const buttonStyle = () => {
-    const styleName = buttonState === false ? 'btn-add btn-enabled' : 'btn-add btn-disabled';
+    const styleName = buttonState === false ? 'btn-add btn-enabled pointer' : 'btn-add btn-disabled';
     return styleName;
   };
 
   const selectStyle = () => {
-    const styleName = form.categoryName === 'Category' ? 'field-with-placeholder' : 'i-field';
+    const styleName = form.categoryName === 'Category' ? 'border-gray field-with-placeholder' : 'border-gray i-field';
     return styleName;
   };
 
   return (
     <div className="book-form-container">
-      <p className="form-title">ADD NEW BOOK</p>
-      <form className="d-flex book-form" onSubmit={handleSubmit}>
+      <p className="form-title bold-font">ADD NEW BOOK</p>
+      <form className="d-flex justyfy-between" onSubmit={handleSubmit}>
         <input
           type="text"
           id="title"
           name="title"
           required
-          className="i-field book-field"
+          className="i-field border-gray book-field"
           value={form.title}
           placeholder="Book title"
           onChange={handleChange}

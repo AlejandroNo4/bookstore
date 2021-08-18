@@ -7,12 +7,17 @@
   font-size: 16px;
   vertical-align: baseline;
   list-style: none;
+  border: none;
+  background: none;
 
   --white: #fff;
   --white-two: #fafafa;
+  --gray: #888;
   --black-two: #121212;
   --azure: #0290ff;
   --border-color: #e8e8e8;
+  --primary-font: 'Roboto Slab', serif;
+  --secondary-font: 'Montserrat', sans-serif;
 }
 
 .pointer:hover {
@@ -28,28 +33,40 @@
   display: flex;
 }
 
+.align-center {
+  align-items: center;
+} 
+
+.justyfy-between {
+  justify-content: space-between;
+}
+
 .opacity {
   opacity: 0.5;
+}
+
+.border-gray {
+  border: solid 1px var(--border-color);
+}
+
+.bold-font {
+  font-weight: bold;
 }
 
 .nav-bar {
   width: 100%;
   background-color: var(--white);
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--secondary-font);
 }
 
 .links-container {
   margin: 0 auto;
-  align-items: center;
   max-width: calc(100vw - 200px);
-  justify-content: space-between;
   height: 95px;
 }
 
 .nav-link {
   letter-spacing: 1.9px;
-  border: none;
-  background: none;
   margin: 0 1.28rem;
   color: var(--black-two);
   -webkit-appearance: none;
@@ -58,14 +75,8 @@
   text-overflow: '';
 }
 
-.nav-links-right {
-  align-items: center;
-}
-
 .user-btn {
-  border: 1px solid var(--border-color);
   padding: 10px 12px;
-  background: none;
   border-radius: 50%;
 }
 
@@ -74,11 +85,8 @@
 }
 
 .button-logo {
-  background: none;
-  border: none;
   font-size: 1.875rem;
   color: var(--azure);
-  font-weight: bold;
   margin-right: 1.7rem;
 }
 
@@ -86,11 +94,7 @@
   margin: 16px auto 0 auto;
   max-width: calc(100vw - 372px);
   padding: 32px 147px 26px 27px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 4px;
-  border: solid 1px var(--border-color);
   background-color: var(--white);
 }
 
@@ -101,59 +105,46 @@
 
 .category {
   margin-bottom: 0.25rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--secondary-font);
   font-size: 0.875rem;
-  font-weight: bold;
   color: var(--black-two);
   opacity: 0.5;
 }
 
 .title {
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--primary-font);
   font-size: 1.375rem;
-  font-weight: bold;
   letter-spacing: -0.2px;
   color: var(--black-two);
 }
 
 .link-list {
-  display: flex;
-  align-items: center;
   margin-top: 1.125rem;
 }
 
 .link {
-  font-family: 'Roboto Slab', serif;
-  background: none;
-  border: none;
-  color: #4386bf;
+  font-family: var(--primary-font);
+  color: var(--azure);
   font-weight: 300;
 }
 
 .line {
   height: 1.5rem;
   margin: 0 1.063rem 0 0.938rem;
-  border: 1px solid var(--border-color);
 }
 
 .line-two {
   height: 4.375rem;
-  border: solid 1px var(--border-color);
-}
-
-.progress-container {
-  display: flex;
-  align-items: center;
 }
 
 .progress-container-left {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--secondary-font);
   padding: 0 4.938rem;
 }
 
 .progress-container-right {
   padding: 0 4.938rem;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--primary-font);
 }
 
 .percentage {
@@ -167,11 +158,10 @@
   border-radius: 3px;
   font-weight: 300;
   color: var(--white);
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--primary-font);
   font-size: 0.813rem;
   letter-spacing: 0.5px;
   text-align: center;
-  border: none;
 }
 
 .current-chapter {
@@ -187,31 +177,25 @@
   max-width: calc(100vw - 200px);
   margin: 45px auto 0 auto;
   padding-bottom: 45px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.book-form {
-  justify-content: space-between;
+  font-family: var(--secondary-font);
 }
 
 .form-title {
   font-size: 1.25rem;
-  color: #888;
+  color: var(--gray);
   letter-spacing: -0.18px;
-  font-weight: bold;
   margin: 40px 0;
 }
 
 .i-field {
   width: 30%;
   background-color: var(--white);
-  border: solid 1px var(--border-color);
   padding: 11.5px 16px;
 }
 
 .i-field::placeholder {
-  color: #c4c4c4;
-  font-family: 'Montserrat', sans-serif;
+  color: var(--gray);
+  font-family: var(--secondary-font);
 }
 
 .book-field {
@@ -221,19 +205,17 @@
 .field-with-placeholder {
   width: 30%;
   background-color: var(--white);
-  border: solid 1px var(--border-color);
-  color: #c4c4c4;
-  font-family: 'Montserrat', sans-serif;
+  color: var(--gray);
+  font-family: var(--secondary-font);
   padding: 11.5px 16px;
 }
 
 .btn-add {
-  border: none;
   width: 20%;
   padding: 11.5px 16px;
   border-radius: 3px;
   background-color: var(--azure);
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--primary-font);
 }
 
 .btn-disabled {
@@ -244,8 +226,4 @@
 .btn-enabled {
   color: var(--white);
   border: 1px solid var(--azure);
-}
-
-.btn-enabled:hover {
-  cursor: pointer;
 }

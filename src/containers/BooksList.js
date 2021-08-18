@@ -27,13 +27,13 @@ export default function BooksList() {
   return (
     <div>
       <nav className="nav-bar">
-        <div className="d-flex links-container">
-          <div className="d-flex nav-links-right">
-            <button className="button-logo pointer" type="button">Bookstore CMS</button>
+        <div className="d-flex align-center justyfy-between links-container">
+          <div className="d-flex align-center">
+            <button className="button-logo bold-font pointer" type="button">Bookstore CMS</button>
             <button type="button" className="nav-link pointer">BOOKS</button>
             <CategoryFilter category="Action" selectHandler={handleFilterChange} />
           </div>
-          <button type="button" className="user-btn pointer">
+          <button type="button" className="user-btn pointer border-gray">
             <img src={userIcon} alt="user icon" className="user-icon" />
           </button>
         </div>
