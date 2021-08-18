@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-size: 16px;
+  vertical-align: baseline;
+  list-style: none;
+  border: none;
+  background: none;
+
+  --white: #fff;
+  --white-two: #fafafa;
+  --gray: #888;
+  --black-two: #121212;
+  --azure: #0290ff;
+  --border-color: #e8e8e8;
+  --primary-font: "Roboto Slab", serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.body {
+  background-color: var(--white-two);
+  min-height: 100vh;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justyfy-between {
+  justify-content: space-between;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.border-gray {
+  border: solid 1px var(--border-color);
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+.nav-bar {
+  width: 100%;
+  background-color: var(--white);
+  font-family: var(--secondary-font);
+}
+
+.links-container {
+  margin: 0 auto;
+  max-width: calc(100vw - 200px);
+  height: 95px;
+}
+
+.nav-link {
+  letter-spacing: 1.9px;
+  margin: 0 1.28rem;
+  color: var(--black-two);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+.user-btn {
+  padding: 10px 12px;
+  border-radius: 50%;
+}
+
+.user-icon {
+  max-width: 20px;
+}
+
+.button-logo {
+  font-size: 1.875rem;
+  color: var(--azure);
+  margin-right: 1.7rem;
+}
+
+.book-panel {
+  margin: 16px auto 0 auto;
+  max-width: calc(100vw - 372px);
+  padding: 32px 147px 26px 27px;
+  border-radius: 4px;
+  background-color: var(--white);
+}
+
+.circle {
+  max-width: 4.25rem;
+  margin: 0 1.4rem;
+}
+
+.category {
+  margin-bottom: 0.25rem;
+  font-family: var(--secondary-font);
+  font-size: 0.875rem;
+  color: var(--black-two);
+  opacity: 0.5;
+}
+
+.title {
+  font-family: var(--primary-font);
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+  color: var(--black-two);
+}
+
+.link-list {
+  margin-top: 1.125rem;
+}
+
+.link {
+  font-family: var(--primary-font);
+  color: var(--azure);
+  font-weight: 300;
+}
+
+.line {
+  height: 1.5rem;
+  margin: 0 1.063rem 0 0.938rem;
+}
+
+.line-two {
+  height: 4.375rem;
+}
+
+.progress-container-left {
+  font-family: var(--secondary-font);
+  padding: 0 4.938rem;
+}
+
+.progress-container-right {
+  padding: 0 4.938rem;
+  font-family: var(--primary-font);
+}
+
+.percentage {
+  font-size: 2rem;
+}
+
+.progress-button {
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  margin-top: 20px;
+  background-color: var(--azure);
+  border-radius: 3px;
+  font-weight: 300;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 0.813rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.current-chapter {
+  margin: 0.438rem 0;
+  font-size: 1rem;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+  font-weight: 300;
+}
+
+.book-form-container {
+  border-top: 2px solid var(--border-color);
+  max-width: calc(100vw - 200px);
+  margin: 45px auto 0 auto;
+  padding-bottom: 45px;
+  font-family: var(--secondary-font);
+}
+
+.form-title {
+  font-size: 1.25rem;
+  color: var(--gray);
+  letter-spacing: -0.18px;
+  margin: 40px 0;
+}
+
+.i-field {
+  width: 30%;
+  background-color: var(--white);
+  padding: 11.5px 16px;
+}
+
+.i-field::placeholder {
+  color: var(--gray);
+  font-family: var(--secondary-font);
+}
+
+.book-field {
+  width: 45%;
+}
+
+.field-with-placeholder {
+  width: 30%;
+  background-color: var(--white);
+  color: var(--gray);
+  font-family: var(--secondary-font);
+  padding: 11.5px 16px;
+}
+
+.btn-add {
+  width: 20%;
+  padding: 11.5px 16px;
+  border-radius: 3px;
+  background-color: var(--azure);
+  font-family: var(--primary-font);
+}
+
+.btn-disabled {
+  opacity: 0.8;
+  color: var(--white-two);
+}
+
+.btn-enabled {
+  color: var(--white);
+  border: 1px solid var(--azure);
+}
