@@ -11,9 +11,12 @@ The Bookstore was made to practice the creation of the front-end of a web applic
 
 <br/>
 
+<img src="app_screenshot.png"/>
+
 ## Live Version
 
 [Live version here!](https://bookstore-no4.herokuapp.com)
+
 
 ## Prerequisites
 
