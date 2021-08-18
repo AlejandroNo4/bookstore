@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function CategoryFilter({ selectHandler }) {
-  const categories = ['ALL', 'ACTION', 'BIOGRAPHY', 'HISTORY', 'HORROR', 'KIDS', 'LEARNING', 'SCI-FI'];
+  const categories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const categoryList = categories.map((c) => <option key={c}>{c}</option>);
   const handleChange = (val) => selectHandler(val);
 
