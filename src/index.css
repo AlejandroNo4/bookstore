@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -16,8 +16,8 @@
   --black-two: #121212;
   --azure: #0290ff;
   --border-color: #e8e8e8;
-  --primary-font: 'Roboto Slab', serif;
-  --secondary-font: 'Montserrat', sans-serif;
+  --primary-font: "Roboto Slab", serif;
+  --secondary-font: "Montserrat", sans-serif;
 }
 
 .pointer:hover {
@@ -35,7 +35,7 @@
 
 .align-center {
   align-items: center;
-} 
+}
 
 .justyfy-between {
   justify-content: space-between;
@@ -72,7 +72,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: '';
+  text-overflow: "";
 }
 
 .user-btn {
